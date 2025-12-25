@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jiro443 - El comienzo de algo sin fin</title>
+
+  <!-- FUENTE BBH BOGLE -->
+  <style>
+    @font-face {
+      font-family: 'BBH Sans Bogle';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('https://cdn.jsdelivr.net/fontsource/fonts/bbh-sans-bogle@latest/latin-400-normal.woff2') format('woff2'),
+           url('https://cdn.jsdelivr.net/fontsource/fonts/bbh-sans-bogle@latest/latin-400-normal.woff') format('woff');
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'BBH Sans Bogle', sans-serif;
+      background-color: #fff;
+      color: #8B0000; /* rojo bordó */
+      text-align: center;
+    }
+
+    header {
+      position: relative;
+    }
+
+    header img#logo {
+      width: 120px;
+      height: auto;
+      position: absolute;
+      top: 20px;
+      left: 20px; /* logo en esquina */
+      z-index: 2;
+    }
+
+    header img#portada {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0.2em 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      text-shadow: 2px 2px 5px #000;
+      z-index: 3;
+    }
+
+    header h2 {
+      font-size: 1.5em;
+      position: absolute;
+      top: 65%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      text-shadow: 1px 1px 3px #000;
+      z-index: 3;
+    }
+
+    .section {
+      margin: 40px 0;
+    }
+
+    .section a {
+      display: inline-block;
+      margin: 10px;
+      text-decoration: none;
+      color: #8B0000;
+      font-weight: bold;
+    }
+
+    .section iframe {
+      max-width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
+
+    img.merch, img.gallery {
+      width: 150px;
+      margin: 10px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="LOGO.png" id="logo" alt="Logo de Jiro443">
+    <img src="PORTADA.jpg" id="portada" alt="Portada de Jiro443">
+    <h1>Jiro443</h1>
+    <h2>El comienzo de algo sin fin</h2>
+  </header>
+
+  <!-- MÚSICA -->
+  <div class="section">
+    <h3>Música</h3>
+    <a href="https://open.spotify.com/artist/3z0FIPp1DqL1XVMMs5H2Cs?si=mcrelxIFQsalv4dqjFPLlw" target="_blank">Spotify</a>
+    <a href="https://music.apple.com/us/artist/jiro443/1679208426" target="_blank">Apple Music</a>
+  </div>
+
+  <!-- VIDEOS -->
+  <div class="section">
+    <h3>Videos</h3>
+    <iframe src="https://www.youtube.com/embed/0FdIoGE_KgA" title="Video 1" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/jPypLFHm03w" title="Video 2" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/tsLIWBdjiN4" title="Video 3" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/udmYdy96Jpk" title="Video 4" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <!-- PLAYLIST -->
+  <div class="section">
+    <h3>Playlist</h3>
+    <iframe src="https://www.youtube.com/embed/videoseries?list=PLsbkNw-6QkLI4lVirw7yEWrpyc6B7kakg" 
+    title="Playlist de Jiro443" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <!-- GALERÍA DE FOTOS -->
+  <div class="section gallery">
+    <img src="foto1.jpg" class="gallery" alt="Foto 1">
+    <img src="foto2.jpg" class="gallery" alt="Foto 2">
+    <img src="foto3.jpg" class="gallery" alt="Foto 3">
+    <img src="foto4.jpg" class="gallery" alt="Foto 4">
+  </div>
+
+  <!-- MERCHANDISING -->
+  <div class="section">
+    <h3>Merchandising</h3>
+    <img src="remera1.jpg" class="merch" alt="Remera 1">
+    <img src="remera2.jpg" class="merch" alt="Remera 2">
+    <img src="gorra1.jpg" class="merch" alt="Gorra 1">
+    <img src="gorra2.jpg" class="merch" alt="Gorra 2">
+  </div>
+</body>
+</html>
