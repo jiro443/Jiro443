@@ -1,133 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jiro443 | El comienzo de algo sin fin</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jiro443</title>
+
+  <meta name="description" content="Jiro443, artista de hip-hop y urbano. Sonido moderno, experiencias reales y visión propia." />
 
   <style>
-    :root {
-      --rojo: #8b0000;
-      --rojo-claro: #b11226;
-      --fondo: #0b0b0b;
-      --texto: #f2f2f2;
-    }
-
-    * { box-sizing: border-box; }
-
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(180deg, #050505, var(--fondo));
-      color: var(--texto);
-    }
-
-    .logo {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      z-index: 100;
-    }
-
-    .logo img {
-      width: 70px;
-      opacity: 0.9;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0b0b;
+      color: #f2f2f2;
+      line-height: 1.6;
     }
 
     header {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      padding: 20px;
       text-align: center;
-      background-image: url('PORTADA.jpg');
-      background-size: cover;
-      background-position: center;
     }
 
-    header .overlay {
-      background: rgba(0,0,0,0.6);
-      padding: 40px 50px;
-      border: 1px solid var(--rojo);
-    }
-
-    header h1 {
-      font-size: 3.5rem;
-      letter-spacing: 4px;
-      margin: 0;
-      color: var(--rojo-claro);
-    }
-
-    header p {
-      margin-top: 15px;
-      font-size: 1.2rem;
-      opacity: 0.9;
+    header img {
+      max-width: 140px;
     }
 
     section {
-      padding: 80px 10%;
+      max-width: 900px;
+      margin: 70px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      margin-bottom: 10px;
     }
 
     h2 {
-      color: var(--rojo-claro);
-      font-size: 2rem;
-      margin-bottom: 30px;
-      border-bottom: 1px solid #333;
-      padding-bottom: 10px;
+      font-size: 1.3rem;
+      font-weight: normal;
+      opacity: 0.85;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
+    h3 {
+      font-size: 1.9rem;
+      margin-bottom: 25px;
     }
 
-    .card {
-      background: rgba(255,255,255,0.04);
-      padding: 20px;
-      border-radius: 14px;
-      border: 1px solid rgba(139,0,0,0.3);
+    p {
+      max-width: 720px;
+      margin: 0 auto 20px;
+      opacity: 0.9;
+    }
+
+    .phrase {
+      margin-top: 20px;
+      font-style: italic;
+      opacity: 0.8;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      border: 1px solid #f2f2f2;
+      color: #f2f2f2;
+      text-decoration: none;
+      border-radius: 25px;
+      font-size: 0.9rem;
+    }
+
+    .links a:hover {
+      background: #f2f2f2;
+      color: #0b0b0b;
     }
 
     iframe {
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    .videos-horizontal {
-      display: flex;
-      gap: 20px;
-      overflow-x: auto;
-      padding-bottom: 10px;
-    }
-
-    .videos-horizontal iframe {
-      min-width: 420px;
-      height: 235px;
-    }
-
-    a {
-      color: var(--rojo-claro);
-      text-decoration: none;
-    }
-
-    .galeria,
-    .merch {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 25px;
-    }
-
-    .galeria img,
-    .merch img {
-      width: 100%;
+      margin-top: 25px;
       border-radius: 12px;
     }
 
     footer {
       text-align: center;
-      padding: 40px 20px;
-      font-size: 0.9rem;
+      padding: 30px 10px;
+      font-size: 0.8rem;
       opacity: 0.6;
     }
   </style>
@@ -135,80 +92,85 @@
 
 <body>
 
-  <div class="logo">
-    <img src="LOGO.png" alt="Logo Jiro443" />
-  </div>
-
+  <!-- HEADER / LOGO -->
   <header>
-    <div class="overlay">
-      <h1>Jiro443</h1>
-      <p>El comienzo de algo sin fin</p>
-    </div>
+    <!-- Si querés logo arriba, descomentá y poné el archivo -->
+    <!-- <img src="logo.png" alt="Jiro443"> -->
   </header>
 
+  <!-- HERO -->
   <section>
-    <h2>Música</h2>
-    <div class="grid">
-      <div class="card">
-        <iframe src="https://open.spotify.com/embed/artist/3z0FIPp1DqL1XVMMs5H2Cs"
-          height="380" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-      </div>
-      <div class="card">
-        <iframe src="https://embed.music.apple.com/us/artist/jiro443/1679208426"
-          height="380"></iframe>
-      </div>
+    <h1>Jiro443</h1>
+    <h2>Hip-hop & urbano · Sonido moderno · Identidad real</h2>
+
+    <p>
+      Artista musical enfocado en el hip-hop y el urbano, con una propuesta
+      honesta que refleja experiencias reales y evolución artística.
+    </p>
+  </section>
+
+  <!-- 443 -->
+  <section>
+    <h3>443</h3>
+
+    <p>
+      La <strong>443</strong> es un movimiento que representa lealtad, amor y
+      crecimiento constante, valores que se reflejan en la música, la visión
+      y la forma de crear.
+    </p>
+
+    <div class="phrase">“pa’ tu love también”</div>
+  </section>
+
+  <!-- MÚSICA -->
+  <section>
+    <h3>Música</h3>
+
+    <iframe style="border-radius:12px"
+      src="https://open.spotify.com/embed/artist/3z0FIPp1DqL1XVMMs5H2Cs"
+      width="100%" height="352" frameborder="0"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+    </iframe>
+  </section>
+
+  <!-- VIDEOS -->
+  <section>
+    <h3>Videos</h3>
+
+    <iframe width="100%" height="315"
+      src="https://www.youtube.com/embed/udmYdy96Jpk"
+      frameborder="0" allowfullscreen>
+    </iframe>
+
+    <iframe width="100%" height="315"
+      src="https://www.youtube.com/embed/qaEGtBJo2VE"
+      frameborder="0" allowfullscreen>
+    </iframe>
+
+    <iframe width="100%" height="315"
+      src="https://www.youtube.com/embed/tsLIWBdjiN4"
+      frameborder="0" allowfullscreen>
+    </iframe>
+  </section>
+
+  <!-- REDES -->
+  <section>
+    <h3>Redes</h3>
+
+    <div class="links">
+      <a href="https://youtube.com/@jiro443" target="_blank">YouTube</a>
+      <a href="https://www.instagram.com/jirooficial443" target="_blank">Instagram</a>
+      <a href="https://open.spotify.com/artist/3z0FIPp1DqL1XVMMs5H2Cs" target="_blank">Spotify</a>
     </div>
   </section>
 
-  <section>
-    <h2>Videos</h2>
-    <div class="videos-horizontal">
-      <iframe src="https://www.youtube.com/embed/0FdIoGE_KgA" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/jPypLFHm03w" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/tsLIWBdjiN4" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/udmYdy96Jpk" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/videoseries?list=PLsbkNw-6QkLI4lVirw7yEWrpyc6B7kakg" allowfullscreen></iframe>
-    </div>
-  </section>
-
-  <section>
-    <h2>Galería</h2>
-    <div class="galeria">
-      <!-- <img src="foto1.jpg"> -->
-      <!-- <img src="foto2.jpg"> -->
-      <!-- <img src="foto3.jpg"> -->
-    </div>
-  </section>
-
-  <section>
-    <h2>Redes</h2>
-    <div class="grid">
-      <div class="card"><a href="https://www.instagram.com/jirooficial443" target="_blank">Instagram</a></div>
-      <div class="card"><a href="https://youtube.com/@jiro443" target="_blank">YouTube</a></div>
-      <div class="card"><a href="https://open.spotify.com/artist/3z0FIPp1DqL1XVMMs5H2Cs" target="_blank">Spotify</a></div>
-      <div class="card"><a href="https://music.apple.com/us/artist/jiro443/1679208426" target="_blank">Apple Music</a></div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Merchandising</h2>
-    <div class="merch">
-      <!-- <div class="card">
-        <img src="remera1.jpg">
-        <p>Remera oficial Jiro443</p>
-      </div> -->
-      <!-- <div class="card">
-        <img src="gorra1.jpg">
-        <p>Gorra oficial Jiro443</p>
-      </div> -->
-    </div>
-  </section>
-
+  <!-- FOOTER -->
   <footer>
-    © Jiro443 — Arte & Música
+    © Jiro443 · Todos los derechos reservados
   </footer>
 
 </body>
 </html>
+
 
 
