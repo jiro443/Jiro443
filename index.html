@@ -25,18 +25,16 @@
     .hero {
       position: relative;
       min-height: 100vh;
-
       background-image: url("./img/jiro4432.png");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-
       display: flex;
       align-items: center;
       padding: 40px 20px 40px 220px;
     }
 
-    /* LOGO (imagen sin fondo) */
+    /* LOGO */
     .logo {
       position: fixed;
       top: 30px;
@@ -74,12 +72,16 @@
       opacity: 0.8;
     }
 
+    /* TEXTO HERO BLANCO CON BORDE FINO */
     .hero-content h1,
-.hero-content h2,
-.hero-content p,
-.hero-content .phrase {
-  color: #000000;
-}
+    .hero-content h2,
+    .hero-content p,
+    .hero-content .phrase {
+      color: #fff;
+      -webkit-text-stroke: 0.6px rgba(0, 0, 0, 0.7);
+      text-stroke: 0.6px rgba(0, 0, 0, 0.7);
+    }
+
     section {
       max-width: 1000px;
       margin: 90px auto;
@@ -132,33 +134,19 @@
 
       .logo {
         width: 130px;
-      } 
-}
-
-/* TEXTO BLANCO CON MARCO FINO */
-.visual-content h3,
-.visual-content p {
-  color: #fff;
-  -webkit-text-stroke: 0.6px rgba(0, 0, 0, 0.7);
-  text-stroke: 0.6px rgba(0, 0, 0, 0.7);
-
-}
-    
+      }
+    }
   </style>
 </head>
 
 <body>
 
-  <!-- HERO / PORTADA -->
   <div class="hero">
-
-    <!-- LOGO -->
     <img src="./img/jiro4431.png" alt="Jiro443 logo" class="logo">
 
-    <!-- TEXTO -->
     <div class="hero-content">
       <h1>Jiro443</h1>
-      <h2>Hip-hop & urbano · Sonido moderno </h2>
+      <h2>Hip-hop & urbano · Sonido moderno</h2>
 
       <p>
         Artista musical enfocado en el hip-hop y el urbano, con una propuesta
@@ -169,7 +157,6 @@
     </div>
   </div>
 
-  <!-- 443 -->
   <section>
     <h3>443</h3>
     <p>
@@ -179,7 +166,6 @@
     </p>
   </section>
 
-  <!-- MÚSICA -->
   <section>
     <h3>Música</h3>
     <iframe
@@ -189,7 +175,6 @@
     </iframe>
   </section>
 
-  <!-- ÚLTIMO LANZAMIENTO (ARRIBA DE LOS VIDEOS) -->
   <section>
     <h3>Último lanzamiento</h3>
     <iframe
@@ -199,7 +184,6 @@
     </iframe>
   </section>
 
-  <!-- VIDEOS -->
   <section>
     <h3>Videos</h3>
 
@@ -216,7 +200,6 @@
       allowfullscreen></iframe>
   </section>
 
-  <!-- REDES -->
   <section>
     <h3>Redes</h3>
     <div class="links">
@@ -232,7 +215,6 @@
 
 </body>
 </html>
-
 
 
 
