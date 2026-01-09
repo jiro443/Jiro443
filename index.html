@@ -133,6 +133,27 @@
       .logo {
         width: 130px;
       }
+
+      /* TEXTO NEGRO EN PC */
+.visual-content h3,
+.visual-content p {
+  color: #000;
+}
+
+/* TEXTO BLANCO EN CELULAR */
+@media (max-width: 768px) {
+  .visual-content h3,
+  .visual-content p {
+    color: #fff;
+  }
+
+  /* fondo oscuro solo en móvil para que se lea bien */
+  .visual-section {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 18px;
+    padding: 40px 20px;
+  }
+}
     }
   </style>
 </head>
@@ -222,5 +243,6 @@
 
 </body>
 </html>
+
 
 
