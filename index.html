@@ -140,13 +140,13 @@
   color: #000;
 }
 
-/* TEXTO BLANCO EN CELULAR */
-@media (max-width: 768px) {
-  .visual-content h3,
-  .visual-content p {
-    color: #fff;
-  }
-
+/* TEXTO BLANCO CON MARCO FINO */
+.visual-content h3,
+.visual-content p {
+  color: #fff;
+  -webkit-text-stroke: 0.6px rgba(0, 0, 0, 0.7);
+  text-stroke: 0.6px rgba(0, 0, 0, 0.7);
+}
   /* fondo oscuro solo en móvil para que se lea bien */
   .visual-section {
     background: rgba(0, 0, 0, 0.6);
@@ -243,6 +243,7 @@
 
 </body>
 </html>
+
 
 
 
